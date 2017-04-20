@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>主页面</title>
 
         
 
@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">你好!</div>
             </div>
         </div>
     </body>

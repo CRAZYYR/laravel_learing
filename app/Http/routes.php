@@ -11,6 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('zs/{name?}', function ($name = 345) {
+    return $name;
 });
+
+// Route::get('posts/{post}/comments/{comment}', function ($postId, $commentId) {
+// 	var_dump($postId,$commentId);
+//     //
+// });
+// Route::get('/', function () {
+//     return view('index');
+// });
+// Route::get('/hd', function () {
+//     echo("get");
+// });
+// Route::any('cc', function () {
+//     echo("any");
+// });
+// Route::match(['post','get'],'/hh',function(){
+// 	echo('match');
+// });
+// Route::get('user/{id}', function ($id) {
+//     return 'User '.$id;
+// });
