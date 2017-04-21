@@ -138,5 +138,38 @@ which means that you are free to use it for any personal or commercial purpose p
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+  $(document).ready(function(){
+
+    $.get("",$data,function(){})
+
+
+  })
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
