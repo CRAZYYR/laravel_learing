@@ -14,7 +14,7 @@
   <div class="header">
     <div class="header_resize">
       <div class="logo">
-        <h1><a href="/index.html">web<span>bw</span></a><small>Simple web template</small></h1>
+        <h1><a href="/index.html">shuai<span>zi</span></a><small>Simple web template</small></h1>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">
