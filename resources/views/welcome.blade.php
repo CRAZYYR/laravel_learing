@@ -36,9 +36,18 @@
         </style>
     </head>
     <body>
+
         <div class="container">
             <div class="content">
-                <div class="title">你好,世界!</div>
+                <div class="title">
+         <!--        <?php echo isset($name)?$name:'xixi'; ?> -->
+            <!--     {{isset($name)?$name:'xixi'}},正在开启... -->
+                 {!!$str!!}
+
+                {{$hh or '哈哈哈'}}
+
+   
+                </div>
             </div>
         </div>
     </body>

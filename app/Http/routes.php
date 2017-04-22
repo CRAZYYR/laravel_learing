@@ -24,6 +24,12 @@
 Route::get('/', function () {
     return view('index');
 });
+ // ===============视图分配===================
+// Route::get('/view', function () {
+//     return view('index');
+// });
+// ================视图路由===================
+Route::any('view','ViewController@index');
 
 
 
@@ -87,10 +93,10 @@ Route::get('/', function () {
 // ===========自定义中间件=============
 // 
 // 
- Route::get('Admin/login','Admin\IndexController@login');
-Route::group(['middleware' => ['admin.login']], function () {
- Route::get('middle',function(){
- 	echo "string";
- });
+//  Route::get('Admin/login','Admin\IndexController@login');
+// Route::group(['middleware' => ['admin.login']], function () {
+//  Route::get('middle',function(){
+//  	echo "string";
+//  });
 
-});
+// });
