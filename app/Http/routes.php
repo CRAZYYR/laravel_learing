@@ -11,7 +11,7 @@
 |
 */
 
-
+Route::get('db','DBController@index');
 // 路由参数匹配
 // Route::get('zs/{name?}', function ($name = 345) {
 //     return $name;
@@ -29,9 +29,13 @@ Route::get('/', function () {
 //     return view('index');
 // });
 // ================视图路由===================
-Route::any('view','ViewController@index');
+//Route::any('view','ViewController@index');
+
+Route::get('view','ViewController@view');
+Route::get('article','ViewController@article');
 
 
+Route::get('layout','ViewController@layout');
 
 // Route::get('/hd', function () {
 //     echo("get");

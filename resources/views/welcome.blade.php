@@ -31,7 +31,7 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 30px;
             }
         </style>
     </head>
@@ -40,13 +40,41 @@
         <div class="container">
             <div class="content">
                 <div class="title">
-         <!--        <?php echo isset($name)?$name:'xixi'; ?> -->
-            <!--     {{isset($name)?$name:'xixi'}},正在开启... -->
-                 {!!$str!!}
+    
+                   @if($data['num']<60)
+                   不及格
+                   @else
+                   及格
+                   @endif
+                   <hr/>
+                @unless($data['num']<60)
+                    及格
+                @endunless
+            <hr/>
+                @for($i=0;$i<$data['num'];$i++)
+                {{$i}} 
+                @endfor
+            <hr/>
+                @foreach($data['article'] as $v)
+                {{$v}}
+                @endforeach
 
-                {{$hh or '哈哈哈'}}
+                <hr/>
+                @forelse($data['article'] as $v)
+                {{$v}}
+                @empty
+                没有数据
+                @endforelse
 
-   
+                <hr/>
+
+                <!-- foreach&&if 嵌套试用 -->
+                    @foreach($data['article'] as $k=>$v)
+                       @if($k>0)
+                       {{$k}}=>{{$v}}<br/>
+                        @endif
+                    @endforeach
+
                 </div>
             </div>
         </div>

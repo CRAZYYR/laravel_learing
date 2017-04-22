@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class ViewController extends Controller
+class DBController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,37 +16,9 @@ class ViewController extends Controller
      */
     public function index()
     {
-        $data = array('name' =>'帅子' ,'xixi'=>'嘻嘻','num'=>20,'article'=>array('news1','news2','news3') );
-        $name=null;
-        $hh=null;
-        $str='<script>document.write("你好!");</script>';
-
-
-        return view('welcome',compact('data'));
-
-
-
-
-
-        // return view('welcome',compact('str','hh'));
-        // return view('welcome',array('name'=>$name));
-        // ==============第三种================
-       // return view('welcome',compact('data','name','hh'));
-        // ======第二种========
-   // return view('welcome',array('name'=>$name,'hh'=>$hh));
-   // 第一种
-        // return view('welcome')->with(array('name'=>$name,'hh'=>$hh));
-    }
-    public function article(){
-        return view('article');
-    }
-    public function view(){
-        return view('view');
+        dd(config('database.connections'));
     }
 
-   public function layout(){
-        return view('layout');
-    }
     /**
      * Show the form for creating a new resource.
      *

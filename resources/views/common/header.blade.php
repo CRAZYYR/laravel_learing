@@ -1,0 +1,1 @@
+<div class="header">header  你当前访问的是:{{$page}}</div>
